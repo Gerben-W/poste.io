@@ -74,8 +74,6 @@ RUN /installation/00-preinstall.sh && \
 # 4190 sieve
 EXPOSE 25 80 110 143 443 465 587 993 995 4190
 
-ADD rootfs VERSION /
-
 VOLUME /data
 
 ENTRYPOINT ["/init"]
